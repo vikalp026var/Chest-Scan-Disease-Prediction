@@ -1,0 +1,25 @@
+stages:
+   stage_01:
+     cmd: python DVC/stage_01.py
+    #  deps:
+    #   - python DVC/stage_01.py
+
+   stage_02:
+     cmd: python DVC/stage_02.py
+    #  deps:
+    #   - python DVC/stage_02.py
+     outs:
+      - artifacts/output.txt
+
+   stage_03:
+     cmd: python DVC/stage_03.py
+    #  deps:
+    #   - python DVC/stage_03.py
+    #   - artifacts/output.txt
+    #  outs:
+    #    - artifacts/output.txt
+
+
+    
+
+
